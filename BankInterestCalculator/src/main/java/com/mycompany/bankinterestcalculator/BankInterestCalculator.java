@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  */
 
-package com.mycompany.bmicalculator;
+package com.mycompany.bankinterestcalculator;
 
 /**
  *
@@ -36,7 +36,7 @@ Simple Interest = (P × R × T) / 100
 o Multiply the principal, rate, and time, then divide by 100.
 o Display the interest earned.
 */
-public class BMICalculator {
+public class BankInterestCalculator {
 
     public static void main(String[] args) {
         System.out.println("Hello World!");
