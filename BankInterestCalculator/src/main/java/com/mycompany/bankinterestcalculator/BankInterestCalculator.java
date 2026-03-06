@@ -4,23 +4,15 @@
 
 package com.mycompany.bankinterestcalculator;
 
+import java.util.Scanner;
+
 /**
  *
  * @author hazel
  */
 
 /*
-Activity 3: Time Converter
-Objective: Learn how to perform unit conversions using multiplication.
-Steps to Follow:
-1. Create a new Java project called TimeConverter.
-2. Import the Scanner class at the beginning.
-3. Inside the main method, do the following:
-o Ask the user to enter a time in hours.
-o Convert it into:
-Minutes = hours × 60
-Seconds = hours × 3600
-4. Print the results.
+
 Activity 4: Bank Interest Calculator
 Objective: Learn how to apply an interest formula.
 Steps to Follow:
@@ -39,6 +31,25 @@ o Display the interest earned.
 public class BankInterestCalculator {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Scanner scan = new Scanner(System.in);
+        
+        System.out.print("Please enter the amount in rands:");
+        double amount = scan.nextDouble();
+        
+        System.out.print("Please enter the interest rate:");
+        double rate = scan.nextDouble();
+        
+        System.out.print("Please enter the period of years:");
+        double years = scan.nextDouble();
+        
+        double interest = (amount * rate * years) / 100;
+        
+        System.out.println("You entered:");
+        System.out.println("R" + amount);
+        System.out.println(rate + "% interest rate");
+        System.out.println(years + " years");
+        System.out.println("Your interst is : R"+interest);
+
+        scan.close();
     }
 }
